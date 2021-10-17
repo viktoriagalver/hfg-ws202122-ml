@@ -47,3 +47,30 @@ e.g. clustering
 > Reinforcement Learning(RL) is a type of machine learning technique that enables an agent to learn in an interactive environment by trial and error using feedback from its own actions and experiences. ..
 
 e.g. AlphaGo
+
+
+### OSC - Open Sound Control
+OSC is a network based communication protocol. It is build on top of the UPD protocol. Since UPD does not send an acknowledgement package, it is very fast, but data could be lost. OSC/UPD is very often used for time critical applications, such as musical software tools or interaction installations. 
+OSC is widely used and almost every creative coding frameworks either has direct support for OSC or offers libraries and plugins to communicate via OSC.
+* [processing: OSC P5](http://www.sojamo.de/libraries/oscP5/)
+* [openFrameworks: ofxOsc](https://github.com/openframeworks/openFrameworks/tree/master/addons/ofxOsc)
+* [arduino: CNMAT/OSC](https://github.com/CNMAT/OSC)
+
+[ofOSCDebugger](https://github.com/thomasgeissl/ofOSCDebugger) might be useful for debugging OSC communications.
+
+OSC runs typically on top of UPD, hence it is not suitable for browser applications. In very raw cases OSC can be sent on top of TCP or serial (SLIP encoding), but this is not very widely supported.
+
+### I/O
+Wekinator provides examples for camera, audio, mouse input, and many more. At the time of writing, some of them are already outdated, but it is relatively simple to write your own custom input and output software.
+A list of examples can be found [here](http://www.wekinator.org/examples/)
+
+### Algorithms
+Amongst others, Wekinator does classification, Regression, and dynamic time warping (gesture recognition) based on your custom trained models.
+
+### Tutorials
+* [getting started](https://www.youtube.com/watch?v=dPV-gCqy9j4)
+* [manual](http://www.wekinator.org/detailed-instructions/)
+* classification - [webcam drum machine](https://www.youtube.com/watch?v=NKyyBAKrQgE)
+* dynamic time warping - [mouse gesture recognition](https://www.youtube.com/watch?v=J4viXTThDTE)
+* [regression](https://www.youtube.com/watch?v=4lxGh0jQWBo)
+* more videos can be found on Wekinator's [youtube channel](https://www.youtube.com/channel/UCot7vfr_9hTy2qp3ksTxGmg/videos)
