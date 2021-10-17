@@ -84,10 +84,10 @@ void draw() {
 // in real-time using the mouse.
 void mouseMoved()
 {
-   modulateAmount = map( mouseY, 0, height, 0, 1 );
-   modulateFrequency = map( mouseX, 0, width, 0, 1 );
-   updateFM();
-   sendOsc();
+   //modulateAmount = map( mouseY, 0, height, 0, 1 );
+   //modulateFrequency = map( mouseX, 0, width, 0, 1 );
+   //updateFM();
+   //sendOsc();
 }
 
 void updateFM() {
